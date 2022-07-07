@@ -825,7 +825,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GRAVITY: 0.04
   JUMP_FORCE: 10
-  time: 5
 --- !u!61 &1514986506
 BoxCollider2D:
   m_ObjectHideFlags: 0
