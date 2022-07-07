@@ -15,16 +15,16 @@ public class game_manager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        game_manager.game_state = GameState.Idle;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(player.transform.position.y < -10) {
+        if(player.transform.position.y < -10 || Collision.collision == 1) {
             game_state = GameState.GameOver;
         }
-        if (game_manager.game_state == GameState.GameOver || game_manager.game_state == GameState.Idle) {
+        if (game_manager.game_state == GameState.GameOver) {
             button.SetActive(true);
         } else {
             button.SetActive(false);

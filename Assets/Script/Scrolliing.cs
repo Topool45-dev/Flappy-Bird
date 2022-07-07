@@ -14,7 +14,8 @@ public class Scrolliing : MonoBehaviour {
     void Update() {
         if (Collision.collision == 0 && game_manager.game_state == GameState.Playing) {
             transform.position -= new Vector3(scrolling * Time.deltaTime, 0, 0);
-            if (transform.position.x < end) {
+            if (transform.position.x <= end) {
+                Player_Flap.score++;
                 transform.position = new Vector3(start, Random.Range(0, 5), 0f);
             }
         }
