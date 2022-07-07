@@ -979,7 +979,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GRAVITY: 0.07
   JUMP_FORCE: 10
-<<<<<<< HEAD
   pipes:
   - {fileID: 1164108741}
   - {fileID: 1390123435}
@@ -987,12 +986,6 @@ MonoBehaviour:
   - {fileID: 1994651518}
   score_text: {fileID: 499878038}
   time: 0.93
-=======
-<<<<<<< HEAD
-=======
-  time: 0.53
->>>>>>> 4560efe7c583c967e5bd87f58e6e6229740a6a13
->>>>>>> 58f8dba3386cf339a92c235b58bdab86db11aef1
 --- !u!61 &1514986506
 BoxCollider2D:
   m_ObjectHideFlags: 0
