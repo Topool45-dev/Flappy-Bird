@@ -28,7 +28,7 @@ public class Player_Flap : MonoBehaviour {
             if(timer <= 0) {
                 velocity = JUMP_FORCE;
                 test = transform.position;
-                if(test.y > -2)
+                if(test.y > 0)
                     timer = time;
                 else {
                     timer = time - 0.7f;

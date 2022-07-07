@@ -8,14 +8,9 @@ public class Button_behaviour : MonoBehaviour
         if (game_manager.game_state == GameState.Idle) {
             gameObject.SetActive(false);
             game_manager.game_state = GameState.Playing;
-        } else {
-            game_manager.game_state = GameState.Idle;
+        } else if(game_manager.game_state == GameState.GameOver) {
+            
         }
     }
 
-    public void Update() {
-        if (game_manager.game_state == GameState.GameOver) {
-            gameObject.SetActive(true);
-        }
-    }
 }
