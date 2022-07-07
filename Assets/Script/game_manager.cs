@@ -22,6 +22,6 @@ public class game_manager : MonoBehaviour
         if(player.transform.position.y < -10) {
             game_state = GameState.GameOver;
         }
-        Debug.Log(game_state);
+        
     }
 }
